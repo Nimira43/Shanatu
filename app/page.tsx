@@ -1,11 +1,10 @@
-import React from 'react'
+import LandingPage from '@/components/LandingPage'
+import { currentUser } from '@clerk/nextjs/server'
+import { redirect } from 'next/navigation'
 
-function HomePage() {
-  return (
-    <div className='p-8 bg-dark'>
-      <h1 className='logo text-light text-4xl'>Shanatu</h1>
-    </div>
-  )
+export default async function HomePage() {
+  const user = await currentUser()
+  if (!user) return <LandingPage />
+
+  return redirect('/events')
 }
-
-export default HomePage
