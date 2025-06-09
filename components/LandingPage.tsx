@@ -19,13 +19,13 @@ export default function LandingPage() {
         </p>
         <div className='flex gap-4'>
           <button 
-            onClick={() => router.push('/(auth)/login')}
+            onClick={() => router.push('/login')}
             className='px-6 py-2 bg-main text-light rounded-md hover:bg-dark uppercase transition'
           >
             Login
           </button>
           <button 
-            onClick={() => router.push('/(auth)/register')}
+            onClick={() => router.push('/register')}
             className='px-6 py-2 bg-main text-light rounded-md hover:bg-dark uppercase transition'
           >
             Register
