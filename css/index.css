@@ -57,9 +57,24 @@ body {
   height: 100vh;
 }
 
-
-
 .logo {
   font-family: 'Eagle Lake', serif;
   letter-spacing: -1px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.calendar {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
 }
