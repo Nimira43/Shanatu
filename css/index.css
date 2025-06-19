@@ -24,7 +24,8 @@ body {
   --grey-light: #ccc;
   --grey-medium: #999;
   --grey-dark: #333;
-  --blaze: #e42a2a;
+  --blaze-light: #f22a2a;
+  --blaze-dark: #d20303;
   --forest: #20da20;
   --dark: #111;
   --light: #fffcfa;
@@ -102,6 +103,15 @@ body {
 
 .btn-primary:hover {
   background-color: var(--main-dark);
+}
+
+.btn-blaze {
+  background-color: var(--blaze-light);
+  color: var(--light)
+}
+
+.btn-blaze:hover {
+  background-color: var(--blaze-dark);
 }
 
 
