@@ -73,6 +73,27 @@ body {
   height: 100%;
 }
 
+@media (min-width: 768px) {
+  .app {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
+
+.mini-calendar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.mini-calender-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
 .btn {
   font-size: var(--size-sm);
   line-height: var(--line-height-sm);
@@ -147,9 +168,3 @@ body {
   width: 0.75rem;
 }
 
-@media (min-width: 768px) {
-  .app {
-    display: grid;
-    grid-template-columns: auto 1fr;
-  }
-}
