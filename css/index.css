@@ -72,6 +72,20 @@ body {
   height: 100%;
 }
 
+.btn {
+  font-size: var(--size-sm);
+  line-height: var(--line-height-sm);
+  font-weight: 400;
+  border-radius: var(--border-radius);
+  border: none;
+  padding: 0 1rem;
+  height: 2.125rem;
+  cursor: pointer;
+  transition: background-color var(--duration-sm) ease-out;
+}
+
+
+
 @media (min-width: 768px) {
   .app {
     display: grid;
