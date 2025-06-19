@@ -49,7 +49,7 @@ export function subtractDays(date, days) {
 export function generateMonthCalendarDays(currentDate) {
   const calendarDays = []
   const lastDayOfPreviousMonthDate = getLastDayOfMonthDate(subtractMonths(currentDate, 1))
-  
+
   const lastDayOfPreviousMonthWeekDay = lastDayOfPreviousMonthDate.getDay()
   if (lastDayOfPreviousMonthWeekDay !== 6) {
     for (let i = lastDayOfPreviousMonthWeekDay; i >= 0; i -= 1) {
@@ -57,11 +57,21 @@ export function generateMonthCalendarDays(currentDate) {
       calendarDays.push(calendarDay)
     }
   }
+  
   const lastDayOfCurrentMonthDate = getLastDayOfMonthDate(currentDate)
   for (let i = 1; i <= lastDayOfCurrentMonthDate.getDate(); i += 1) {
     const calendarDay = addDays(lastDayOfPreviousMonthDate, i)
     calendarDays.push(calendarDay)
   }
+
+  const totalWeeks = Math.ceil(calendarDays.length / 7)
+  const totalDays = totalWeeks * 7
+  const missingDayAmount = totalDays - calendarDays.length
+  for (let i = 1; i <= missingDayAmount; i += 1) {
+    const calendarDay = addDays(lastDayOfCurrentMonthDate, i)
+    calendarDays.push(calendarDay)
+  }
+  return calendarDays
 }
 
 function getLastDayOfMonthDate(date) {
