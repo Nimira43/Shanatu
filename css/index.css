@@ -21,6 +21,7 @@
   --light: #fffcfa;
   --black: #000;
   --white: #fff;
+
   --size-xs: 0.75rem;
   --size-sm: 0.875rem;
   --size-md: 1rem;
@@ -31,6 +32,11 @@
   --line-height-md: 1.5rem;
   --line-height-lg: 1.75rem;
   --line-height-xl: 2rem;
+
+  --border-radius: 0.1875rem;
+  --duration-sm: 100ms;
+  --duration-md: 300ms;
+  --duration-lg: 3000ms.
 }
 
 
