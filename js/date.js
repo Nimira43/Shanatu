@@ -17,7 +17,31 @@ export function addMonths(date, months) {
     date.getHours()
   )
   const lastDayOfMonth = getLastDayOfMonthDate(firstDayOfMonth)
+
+  const dayOfMonth = Math.min(date.getDate(),
+  lastDayOfMonth.getDate())
+
+  return new Date(
+    date.getFullYear(),
+    date.getMonth() + months,
+    dayOfMonth,
+    date.getHours()
+  )
 }
+
+export function subtractMonths(date, months) {
+  return addMonths(date, -months)
+}
+
+export function addDays(date, days) {
+  return new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    date.getDate() + days,
+    date.getHours()
+  )
+}
+
 
 function getLastDayOfMonthDate(date) {
   return new Date(
