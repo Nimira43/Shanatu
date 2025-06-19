@@ -114,6 +114,38 @@ body {
   background-color: var(--blaze-dark);
 }
 
+.btn-lg {
+  font-weight: 500;
+  height: 2.5rem;
+}
+
+.btn-sm {
+  font-size: var(--size-xs);
+  line-height: var(--line-height-xs);
+  height: 1.75rem;
+  padding: 0 0.5rem
+}
+
+.btn-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.124rem;
+  padding: 0;
+  border: none;
+}
+
+.btn-icon.btn-sm{
+  width: 1.75rem;
+}
+
+.btn-icon-x {
+  width: 1rem;
+}
+
+.btn-sm .btn-icon-x {
+  width: 0.75rem;
+}
 
 @media (min-width: 768px) {
   .app {
