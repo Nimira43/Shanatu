@@ -76,6 +76,7 @@ body {
   font-size: var(--size-sm);
   line-height: var(--line-height-sm);
   font-weight: 400;
+  text-transform: uppercase;
   border-radius: var(--border-radius);
   border: none;
   padding: 0 1rem;
@@ -84,6 +85,24 @@ body {
   transition: background-color var(--duration-sm) ease-out;
 }
 
+.btn-secondary {
+  background-color: var(--light);
+  border: 1px solid var(--grey-dark);
+  color: var(--grey-dark)
+}
+
+.btn-secondary:hover {
+  background-color: var(--grey-light-extra);
+}
+
+.btn-primary {
+  background-color: var(--main);
+  color: var(--light)
+}
+
+.btn-primary:hover {
+  background-color: var(--main-dark);
+}
 
 
 @media (min-width: 768px) {
