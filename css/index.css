@@ -36,7 +36,12 @@
   --border-radius: 0.1875rem;
   --duration-sm: 100ms;
   --duration-md: 300ms;
-  --duration-lg: 3000ms.
+  --duration-lg: 3000ms;
+
+  --box-shadow-md: 0 1px 3px 0 rgba(0, 0, 0, 0.1),
+                   0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  --box-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                   0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
 
