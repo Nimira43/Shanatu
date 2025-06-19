@@ -5,6 +5,27 @@
   font-weight: 300; 
 }
 
+:root {
+  --main-light: #efdad2;
+  --main: #fd642c;
+  --main-dark: #ff4500;
+  --support-light: #008cff;
+  --support-light: #026dc5;
+  --grey-light-extra: #eee;
+  --grey-light: #ccc;
+  --grey-medium: #999;
+  --grey-dark: #333;
+  --blaze: #e42a2a;
+  --forest: #20da20;
+  --dark: #111;
+  --light: #fffcfa;
+  --black: #000;
+  --white: #fff;
+
+}
+
+
+
 .logo {
   font-family: 'Eagle Lake', serif;
   letter-spacing: -1px;
