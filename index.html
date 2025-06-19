@@ -11,56 +11,75 @@
 <body>
   <div class="app">
     <div class="sidebar desktop-only">
-      <i class="fa-solid fa-calendar"></i>
-      <span class="sidebar-title logo">Shanatu</span>
-    </div>
-    <button 
-      class="btn btn-primary btn-lg"
-      data-event-create-button      
-    >
-      Create Event
-    </button>
-    <div 
-      class="mini-calendar"
-      data-mini-calendar
-    >
-      <div class="mini-calendar-header">
-        <time 
-          class="mini-calendar-date"
-          data-mini-calendar-date
-        ></time>
-        <div class="mini-calendar-controls">
-          <button 
-            class="btn btn-icon btn-secondary btn-sm"
-            data-mini-calendar-previous-button  
-          >
-            <i class="fa-solid fa-arrow-left"></i>
-          </button>
-          <button 
-            class="btn btn-icon btn-secondary btn-sm"
-            data-mini-calendar-next-button  
-          >
-            <i class="fa-solid fa-arrow-right"></i>
-          </button>
+      <div class="sidebar-logo">
+        <i class="fa-solid fa-calendar"></i>
+        <span class="sidebar-title logo">Shanatu</span>
+      </div>
+      <button 
+        class="btn btn-primary btn-lg"
+        data-event-create-button      
+      >
+        Create Event
+      </button>  
+      <div 
+        class="mini-calendar"
+        data-mini-calendar
+      >
+        <div class="mini-calendar-header">
+          <time 
+            class="mini-calendar-date"
+            data-mini-calendar-date
+          ></time>
+          <div class="mini-calendar-controls">
+            <button 
+              class="btn btn-icon btn-secondary btn-sm"
+              data-mini-calendar-previous-button  
+            >
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button 
+              class="btn btn-icon btn-secondary btn-sm"
+              data-mini-calendar-next-button  
+            >
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="mini-calendar-content">
+          <ul class="mini-calendar-day-of-week-list">
+            <li class="mini-calendar-day">S</li>
+            <li class="mini-calendar-day">M</li>
+            <li class="mini-calendar-day">T</li>
+            <li class="mini-calendar-day">W</li>
+            <li class="mini-calendar-day">T</li>
+            <li class="mini-calendar-day">F</li>
+            <li class="mini-calendar-day">S</li>
+          </ul>
+          <ul 
+            class="mini-calendar-day-list"
+            data-mini-calendar-day-list  
+          ></ul>
         </div>
       </div>
-      <div class="mini-calendar-content">
-        <ul class="mini-calendar-day-of-week-list">
-          <li class="mini-calendar-day">S</li>
-          <li class="mini-calendar-day">M</li>
-          <li class="mini-calendar-day">T</li>
-          <li class="mini-calendar-day">W</li>
-          <li class="mini-calendar-day">T</li>
-          <li class="mini-calendar-day">F</li>
-          <li class="mini-calendar-day">S</li>
-        </ul>
-        <ul 
-          class="mini-calendar-day-list"
-          data-mini-calendar-day-list  
-        ></ul>
-      </div>
     </div>
+    <main class="main">
+      Main
+    </main>
   </div>
+  <button>Mobile Only</button>
+  <dialog>Event Form</dialog>
+  <dialog>Event Details</dialog>
+  <dialog>Event Delete</dialog>
+  <dialog>Mobile Sidebar</dialog>
+  <template>Mobile Month Calendar</template>
+  <template>Mobile Month Calendar Day</template>
+  <template>Mobile Week Calendar</template>
+  <template>Mobile Week Calendar Day</template>
+  <template>Mobile Week Calendar All Day</template>
+  <template>Mobile Week Calendar Column</template>
+  <template>Event List Item</template>
+  <template>Event</template>
+  <template>Mini Calendar</template>
   <script src="./js/index.js"></script>
 </body>
 </html>
