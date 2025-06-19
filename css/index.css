@@ -21,7 +21,16 @@
   --light: #fffcfa;
   --black: #000;
   --white: #fff;
-
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-md: 1rem;
+  --size-lg: 0.125rem;
+  --size-xl: 1.5rem;
+  --line-height-xs: 1rem;
+  --line-height-sm: 1.25rem;
+  --line-height-md: 1.5rem;
+  --line-height-lg: 1.75rem;
+  --line-height-xl: 2rem;
 }
 
 
