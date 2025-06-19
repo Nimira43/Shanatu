@@ -74,6 +74,10 @@ export function generateMonthCalendarDays(currentDate) {
   return calendarDays
 }
 
+export function isTheSameDay(dateA, dateB) {
+  return dateA.getFullYear() === dateB.getFullYear() && dateA.getMonth() === dateB.getMonth() && dateA.getDate() === dateB.getDate()
+}
+
 function getLastDayOfMonthDate(date) {
   return new Date(
     date.getFullYear(),
