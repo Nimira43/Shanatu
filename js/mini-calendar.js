@@ -8,8 +8,10 @@ const dataFormatter = new Intl.DateTimeFormat("en-GB", {
   year: 'numeric'
 })
 
-
 export function initMiniCalendars() {
+  const calendataElements = document.querySelectorAll(['[data-mini-calendar]'])
 
-
+  for (const calendarElement of calendarElements) {
+    initMiniCalendars(calendarElement)
+  }
 }
