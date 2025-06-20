@@ -3,6 +3,10 @@ import { getUrlDate } from './url.js'
 
 const calendarDayListItemTemplateElement = document.querySelector('data-template=mini-calendar-day-list-item')
 
+const dataFormatter = new Intl.DateTimeFormat("en-GB", {
+  month: 'long',
+  year: 'numeric'
+})
 
 
 export function initMiniCalendars() {
