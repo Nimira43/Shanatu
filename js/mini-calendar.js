@@ -32,6 +32,15 @@ function initMiniCalendar(calendarElement) {
     )
   }
 
+  calendarPreviousButtonElement.addEventListener('click', () => {
+    miniCalendarDate = subtractMonths(miniCalendarDate, 1)
+    refreshMiniCalendar()
+  })
+
+  calendarNextButtonElement.addEventListener('click', () => {
+    miniCalendarDate = addMonths(miniCalendarDate, 1)
+    refreshMiniCalendar()
+  })
 }
 
 
