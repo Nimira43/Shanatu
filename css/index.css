@@ -226,3 +226,10 @@ body {
   border: 1px solid transparent;
 }
 
+.mini-calendar-day-other {
+  color: var(--dark);
+}
+
+.mini-calendar-day-highlight {
+  border-color: var(--main);
+}
