@@ -56,5 +56,17 @@ function refreshDateElement(parent, data) {
   calendarDateElement.textContent = dateFormatter.formatRange(date)
 }
 
+function refreshDayListElement(parent, miniCalendarDate, selectDate) {
+  const calendarDayListElement = parent.querySelector('[data-mini-calendar-day-list]')
+  calendarDayListElement.replaceChildren()
 
-function refreshDayListElement(parent, miniCalendarDate, selectDate) {}
+  const calendarDays = generateMonthCalendarDays(miniCalendarDate)
+
+  for (const calendarDay of calendarDays) {
+    const calendarDayListItemContent = calendarDayListItemTemplateElement.content.cloneNode(true)
+    const calendarDayListItemElement = calendarDayListItemContent.querySelector('[data-mini-calendar-day-list-item]')
+    const calendarDayElement = calendarDayListItemElement.querySelector('[data-mini-calendar-day]')
+
+  }
+
+}
