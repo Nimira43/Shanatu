@@ -41,8 +41,19 @@ function initMiniCalendar(calendarElement) {
     miniCalendarDate = addMonths(miniCalendarDate, 1)
     refreshMiniCalendar()
   })
+
+  document.addEventListener('date-change', (event) => {
+    selectedDate = event.detail.date
+    miniCalendarDate = event.detail.date
+    refreshMiniCalendar()
+  })
+  refreshMiniCalendar()
+}
+
+function refreshDateElement(parent, data) {
+
+
 }
 
 
-function refreshDateElement(parent, data) {}
 function refreshDayListElement(parent, miniCalendarDate, selectDate) {}
