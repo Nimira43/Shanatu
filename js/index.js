@@ -1,3 +1,3 @@
-import { initMiniCalendars } from './mini-calendar'
+import { initMiniCalendars } from './mini-calendar.js'
 
 initMiniCalendars()

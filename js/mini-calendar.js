@@ -1,7 +1,7 @@
 import { today, subtractMonths, addMonths, generateMonthCalendarDays, isTheSameDay } from './date.js'
 import { getUrlDate } from './url.js'
 
-const calendarDayListItemTemplateElement = document.querySelector('data-template=mini-calendar-day-list-item')
+const calendarDayListItemTemplateElement = document.querySelector('[data-template=mini-calendar-day-list-item]')
 
 const dateFormatter = new Intl.DateTimeFormat("en-GB", {
   month: 'long',
@@ -50,10 +50,10 @@ function initMiniCalendar(calendarElement) {
   refreshMiniCalendar()
 }
 
-function refreshDateElement(parent, data) {
+function refreshDateElement(parent, date) {
   const calendarDateElement = parent.querySelector('[data-mini-calendar-date]')
 
-  calendarDateElement.textContent = dateFormatter.formatRange(date)
+  calendarDateElement.textContent = dateFormatter.format(date)
 }
 
 function refreshDayListElement(parent, miniCalendarDate, selectDate) {
@@ -79,6 +79,20 @@ function refreshDayListElement(parent, miniCalendarDate, selectDate) {
       calendarDayElement.classList.add('button-secondary')
     }
 
+    if (isTheSameDay(today(), calendarDay)) {
+      calendarDayElement.classList.add('mini-calendar-day-highlight')
+    }
+
+    calendarDayElement.addEventListener('click', () => {
+      calendarDayElement.dispatchEvent(new CustomEvent('date-change', {
+        detail: {
+          date: calendarDay
+        },
+        bubbles: true
+      }))
+    })
+    calendarDayListElement.appendChild(calendarDayListItemElement)
   }
 
+  
 }

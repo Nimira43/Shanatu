@@ -1,4 +1,4 @@
-import { today } from './date'
+import { today } from './date.js'
 
 export function getUrlDate() {
   const urlParams = new URLSearchParams(window.location.search)
