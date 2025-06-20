@@ -9,13 +9,31 @@ const dataFormatter = new Intl.DateTimeFormat("en-GB", {
 })
 
 export function initMiniCalendars() {
-  const calendataElements = document.querySelectorAll(['[data-mini-calendar]'])
+  const calendarElements = document.querySelectorAll(['[data-mini-calendar]'])
 
   for (const calendarElement of calendarElements) {
     initMiniCalendar(calendarElement)
   }
 }
 
-function initMiniCalendar(calendarElement) {}
+function initMiniCalendar(calendarElement) {
+  const calendarPreviousButtonElement = calendarElement.querySelector('[data-mini-calendar-previous-button]')
+  const calendarNextButtonElement = calendarElement.querySelector('[data-mini-calendar-next-button]')
+
+  let selectedDate = getUrlDate()
+  let miniCalendarDate = getUrlDate()
+
+  function refreshMiniCalendar() {
+    refreshDateElement(calendarElement, miniCalendarDate)
+    refreshDayListElement(
+      calendarElement,
+      miniCalendarDate,
+      selectedDate
+    )
+  }
+
+}
+
+
 function refreshDateElement(parent, data) {}
 function refreshDayListElement(parent, miniCalendarDate, selectDate) {}
