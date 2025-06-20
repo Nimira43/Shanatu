@@ -67,6 +67,18 @@ function refreshDayListElement(parent, miniCalendarDate, selectDate) {
     const calendarDayListItemElement = calendarDayListItemContent.querySelector('[data-mini-calendar-day-list-item]')
     const calendarDayElement = calendarDayListItemElement.querySelector('[data-mini-calendar-day]')
 
+    calendarDayElement.textContent = calendarDay.getDate()
+
+    if (miniCalendarDate.getMonth() !== calendarDay.getMonth()) {
+      calendarDayElement.classList.add('mini-calendar-day-after')
+    }
+
+    if (isTheSameDay(selectDate, calendarDay)) {
+      calendarDayElement.classList.add('button-primary')
+    } else {
+      calendarDayElement.classList.add('button-secondary')
+    }
+
   }
 
 }
