@@ -220,3 +220,9 @@ body {
 .mini-calendar-day-list-item {
   text-align: center;
 }
+
+.mini-calendar-day {
+  width: 100%;
+  border: 1px solid transparent;
+}
+
