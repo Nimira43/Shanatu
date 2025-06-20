@@ -1,4 +1,11 @@
 import { today, subtractMonths, addMonths, generateMonthCalendarDays, isTheSameDay } from './date.js'
 import { getUrlDate } from './url.js'
 
-export function initMiniCalendars() {}
+const calendarDayListItemTemplateElement = document.querySelector('data-template=mini-calendar-day-list-item')
+
+
+
+export function initMiniCalendars() {
+
+
+}
